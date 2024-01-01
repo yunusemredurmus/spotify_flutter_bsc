@@ -7,25 +7,33 @@ class SelectedForYou extends StatelessWidget {
     {
       "id": 1,
       "name": "Música sin copyright",
-      "image": "assets/images/IMG_2879.png"
+      "image": "https://picsum.photos/250?image=9",
     },
     {
       "id": 2,
       "name": "Como Estrellas Radio",
-      "image": "assets/images/IMG_2879.png"
+      "image": "https://picsum.photos/250?image=13"
     },
-    {"id": 3, "name": "Todo Indie", "image": "assets/images/IMG_2879.png"},
+    {
+      "id": 3,
+      "name": "Todo Indie",
+      "image": "https://picsum.photos/250?image=7"
+    },
     {
       "id": 4,
       "name": "Descubrimiento semanal",
-      "image": "assets/images/IMG_2879.png"
+      "image": "https://picsum.photos/250?image=54"
     },
-    {"id": 5, "name": "Éxitos España", "image": "assets/images/IMG_2879.png"},
+    {
+      "id": 5,
+      "name": "Éxitos España",
+      "image": "https://picsum.photos/250?image=10"
+    },
     {
       "id": 6,
       "name": "Música sin copyright",
-      "image": "assets/images/IMG_2879.png"
-    }
+      "image": "https://picsum.photos/250?image=19"
+    },
   ];
 
   @override
@@ -56,7 +64,7 @@ class SelectedForYou extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Column(
                   children: [
-                    Image.asset(
+                    Image.network(
                       data[index]["image"],
                       width:
                           112, // İstenirse resmin genişliği ve yüksekliği ayarlanabilir.
